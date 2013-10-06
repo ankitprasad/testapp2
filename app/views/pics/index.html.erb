@@ -1,7 +1,22 @@
-<h1>My Pics</h1>
+<div class="my-wrapper">
+<h1 class="custom-font-1 offset0">My Pics</h1>
+<br/>
 
 <% @pics.each do |pic| %>
+	<div class="box span4 offset0">
+		<h2>
+			Hour <%= pic.hour %>
+		</h2>
 
-	<%= pic.inspect %>
+		<h3>
+			I feel <%= pic.emotion %>.
+		</h3>
+
+		<p>
+			I learned that <%= pic.learned %>.
+		</p>
+	</div>
 
 <% end %>
+
+</div>
