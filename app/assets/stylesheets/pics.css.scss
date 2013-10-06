@@ -1,8 +1,9 @@
 // Place all the styles related to the pics controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.box {
-    background-color: rgba(36, 32, 33, 0.65);
-    box-shadow: 2px -2px 2px 2px rgba(36, 32, 33, 0.65);
-    padding: 1%;
+
+.centered-horizontal-newbox{
+	position: fixed;
+  	left: 50%;
+  	margin-left: -125px;
 }

@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(:version => 20131005203053) do
     t.integer  "hour"
     t.string   "emotion"
     t.text     "learned"
+    t.text     "something"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
