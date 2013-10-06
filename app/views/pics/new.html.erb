@@ -3,9 +3,16 @@
 <br/>
 <div class="stolen-surfbox span0 centered-horizontal-newbox">
 <%= simple_form_for @pic do |f| %>
+
 	<%= f.input :hour, :label_html=> { :class=>'custom-font-2' }, :input_html=>{:class=>'newbox-width'}%>
+
+	<%= f.input :image, :as => :file, :label_html=> { :class=>'custom-font-2' } %>
+
 	<%= f.input :emotion, :label =>'Mood', :label_html=> {:class=>'custom-font-2'}, :input_html=>{:class=>'newbox-width'}%>
+
 	<%= f.input :learned, :label_html => {:class =>'custom-font-2'}, :input_html=>{:class=>'newbox-height newbox-width'} %>
+
 	<%= submit_tag "Save Picture", :class=>'btn btn-primary'%>
+
 <% end %>
 </div>
